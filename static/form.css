@@ -1,0 +1,39 @@
+input {
+    /* Basic styling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Appearance */
+    color: #333;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    /* Focus styling */
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+    background-color: #fff;
+}
+
+input:hover {
+    /* Hover effect */
+    border-color: #999;
+}
+
+input:disabled {
+    /* Disabled styling */
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+input::placeholder {
+    /* Placeholder text styling */
+    color: #999;
+}
