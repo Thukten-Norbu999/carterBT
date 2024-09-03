@@ -1,0 +1,10 @@
+
+.section.col-2{
+    columns: 2 12rem;
+}
+
+.container.form{
+    background-color: red;
+    height: 500px;
+    width: 500px;
+}

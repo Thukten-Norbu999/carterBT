@@ -7,13 +7,38 @@ html{
 .container {
     display: grid;
     /* flex-direction: row;  */
-    z-index: 5;
+    
     margin: 5% auto;
 }
 
+.container.form{
+    border: 1px black solid;
+    height: 500px;
+    width: 500px;
+    
+}
 
 
 .content-container{
-	display: flexbox;
+	display: flex;
 	justify-content: center;
+}
+
+.row{
+    display: grid;
+    grid-row: auto;
+}
+
+ .row > .col-6{
+    
+    column-count: 2;
+}
+
+.row > .col-3{
+    column-count:3
+}
+
+.row > .col-9{
+    border: 1px black solid;
+    column-count: 9;
 }
