@@ -3,21 +3,18 @@
 html {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  padding: 5px;
+  
 }
 
 .container {
   display: grid;
   /* flex-direction: row;  */
 
-  margin: 5% auto;
+  margin-top: 10%;
+  
 }
 
-.container.form {
-  border: 1px black solid;
-  height: 500px;
-  width: 500px;
-}
+
 
 .content-container {
   display: flex;
@@ -40,4 +37,8 @@ html {
 .row > .col-9 {
   border: 1px black solid;
   column-count: 9;
+}
+
+@media screen {
+    
 }

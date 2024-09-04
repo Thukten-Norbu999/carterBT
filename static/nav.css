@@ -27,6 +27,8 @@ nav ul, nav ol {
 .nav {
 	display: flex;
 	justify-items: center;
+	width: 100%;
+	max-width: 100%;
 	align-items: center;
 	position: fixed;
 	z-index: 1;
@@ -40,8 +42,8 @@ nav ul, nav ol {
 
 .nav .nav-container {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: flex-end;
+	align-items: flex-end;
 	padding: 10px 0;
 	transition: all 0.3s ease-in-out;
   }
