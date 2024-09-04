@@ -1,0 +1,18 @@
+*{
+    justify-content: center;
+    align-items: center;
+}
+#slider{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto ;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 5/1;
+}
+.des{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
