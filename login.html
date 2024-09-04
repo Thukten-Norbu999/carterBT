@@ -1,47 +1,36 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style.css" />
-    <link rel="stylesheet" href="static/nav.css" />
-    <link rel="stylesheet" href="static/form.css" />
-    <title>Login</title>
-</head>
-<body>
-    <section></section>
-    <div class="container form">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Turbo.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    
+  </head>
+  <body>
+    <div class="combo">
+      <form action="">
         <h1>login</h1>
-        
-            <form action="" method="post" class="row">
-                <div class="col-2">
-                    <label for="" class="form-label">Email</label>
-                    <input type="email" name="" id="" placeholder="email" class="form-control">
-                </div>
-                <div class="col-2">
-                    <label for="" class="form-label">Password</label>
-                    <input type="password" name="" id="" placeholder="password" class="form-control">
-                </div>
-                <div class="col-3">
-                    <label for="" class="form-label">Add</label>
-                    <input type="text" class="form-control">
-                    
-                    <label for="" class="form-label">Add2</label>
-                    <input type="text" class="form-control">
-                    
-                    <label for="" class="form-label">Add3</label>
-                    <input type="text" class="form-control">
-                </div>
-
-                <div class="col-9">
-                    <div>
-                        <label for="" class="form-label">Check to get email</label>
-                        <input type="checkbox" name="" id="" class="form-control">
-                    </div>
-                    
-                </div>
-            </form>
-        
+        <div class="Input-box">
+          <input type="text" placeholder="Username" required />
+          <i class="bx bxs-user-circle"></i>
+        </div>
+        <div class="input-box">
+          <input type="Password" placeholder="Password" required />
+          <i class="bx bxs-lock-open"></i>
+        </div>
+        <div class="remember-forget">
+          <label> <input type="checkbox" /> Remember Me</label>
+          <a href="#">Forget Password</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="register-link">
+          <p>Dont have an account? <a href="#">Regester</a></p>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
