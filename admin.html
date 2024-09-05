@@ -3,32 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/admin.css">
+    <link rel="stylesheet" href="static/style.css">
     <title>Parent with Indented Child</title>
     
 </head>
 <body>
-    <aside>
-        <div class="aside-nav-container">
-
+    <section id="menu">
+        <div class="logo">
+            <img src="assets/bg-logo.png" alt="">
+            <h2>carterBT</h2>
         </div>
-    </aside>
-    <div class="parent">
-        <div class="child">Indented Child</div>
-    </div>
+
+        <div class="items">
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">UI</a></li>
+            <li><a href="">A</a></li>
+            <li><a href="">C</a></li>
+            <li><a href="">D</a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div class="search">
+                    <i class="far search"></i>
+                    <input type="search" name="" id="" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="fa fa-bell"></i>
+                <img src="assets/logo.png" alt="">
+            </div>
+        </div>
+    </section>
 </body>
 
-<style>
-    .parent {
-        width: 300px;
-        height: 200px;
-        background-color: lightgrey;
-        position: relative;
-    }
 
-    .child {
-        background-color: coral;
-        height: 100px;
-        margin: 20px; /* Indent the child div from the edges of the parent */
-    }
-</style>
 </html>
