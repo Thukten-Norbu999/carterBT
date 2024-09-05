@@ -16,8 +16,8 @@ body {
 }
 .combo{
     width: 428px;
-    background-color: #F8D99B;
-    color: white;
+    background-color: whitesmoke;
+    color: #F8D99B;
     border: 1px black solid;
     border-radius: 12px;
     padding: 30px 40px;

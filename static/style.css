@@ -29,8 +29,9 @@ html{
     grid-row: auto;
 }
 
- .row > .col-6{
-    
+ .row .col-2{
+    display: grid;
+    grid-template-columns: max-content(2);
     column-count: 2;
 }
 
