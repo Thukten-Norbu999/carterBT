@@ -8,101 +8,149 @@
     <link rel="stylesheet" href="static/style.css" />
     <link rel="stylesheet" href="static/nav.css" />
     <link rel="stylesheet" href="static/form.css" />
-    <link rel="stylesheet" href="static/index.css">
+    <link rel="stylesheet" href="static/index.css" />
 
+    <!-- choose one -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
     <title>Home</title>
   </head>
   <body>
-    <!-- navbar -->
-      <nav class="nav">
+    <!-- <div class="wrapper">
+      <nav class="navbar">
         <div class="nav-logo">
           <img
-            src="assets/bg-logo.png"
-            alt=""
-            width="50"
-            height="50"
-            class=""
-          />
-          <a class="navbar-brand" href="#"> carter.bt </a>
-          <div class="nav-container">
-            <ul>
-              <li class="nav-item">
-                <a class="nav-link" href="">Home</a>
-              </li>
-              <li  class="nav-item">
-                <a href="login.html" class="nav-link">Login</a>
-              </li>
-              <li class="nav-item">
-                <div class="form-container search">
-                  <form action="" method="post">
-                    <input type="search" />
-                    
-                    
-                  </form>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="trial.html">Products</a>
-              </li>
-
-              <li class="nav-item"><a class="nav-link" href="">My Chart</a></li>
-
-              <li class="nav-item"><a class="nav-link" href=""></a></li>
-
-            </ul>
-          </div>
+          src="assets/bg-logo.png"
+          alt=""
+          width="50"
+          height="50"
+          class=""
+        />
+        <a class="navbar-brand" href="#"> carter.bt </a>
         </div>
-        
+
+        <div class="nav-menu">
+          <ul>
+            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Admin</a></li>
+            <li class="nav-item">
+              <div class="nav-search">
+                <form action="" method="post">
+                  input.nav
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
-    <!-- navbar  -->
+    </div> -->
+    <!-- navbar -->
 
-    <!-- Carousel -->
-    
-      <section class="carousel">
-        <div class="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="col-2">
-                  <div class="carousel-img">
-                    <img src="assets/bg-logo.png" alt="Image 1" width="50%" height="50%">
-                  </div>
-                  
-                </div>
-                  
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-img">
-                  <img src="assets/bg-logo.png" alt="Image 1" width="50%" height="50%">
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-img">
-                  <img src="assets/bg-logo.png" alt="Image 1" width="50%" height="50%">
-                </div>
-              </div>
-          </div>
-          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    <nav class="nav">
+      <div class="nav-logo">
+        <img src="assets/bg-logo.png" alt="" width="50" height="50" class="" />
+        <a class="navbar-brand" href="#"> carter.BT </a>
       </div>
-      </section>
-  
+      <div class="nav-container hidden">
+        <ul>
+          <li class="nav-item">
+            <i class="icon" data-feather="home"></i>
+            <a class="nav-link current" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <i class="icon" data-feather="log-in"></i>
+            <a href="login.html" class="nav-link">Login</a>
+          </li>
+
+          <li class="nav-item">
+            
+            <a class="nav-link" href="trial.html"><i class="icon" data-feather="phone"></i>Products</a>
+          </li>
+
+          <li class="nav-item">
+            <i class="icon" data-feather="shopping-cart"></i>
+            <a class="nav-link" href="">My Chart</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href=""></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="wrapper">
+      <div class="i1"></div>
+      <div class="i2"></div>
+      <div class="i3"></div>
+      <div class="i4"></div>
+      <div class="i5"></div>
+      <div class="i6"></div>
+    </div>
+    <section class="container-offer">
+      <div class="container">
+
+      </div>
+    </section>
+    <!-- Carousel -->
+
+    <section class="carousel">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="col-2">
+              <div class="carousel-img">
+                <img
+                  src="assets/bg-logo.png"
+                  alt="Image 1"
+                  width="50%"
+                  height="50%"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-img">
+              <img
+                src="assets/bg-logo.png"
+                alt="Image 1"
+                width="50%"
+                height="50%"
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-img">
+              <img
+                src="assets/bg-logo.png"
+                alt="Image 1"
+                width="50%"
+                height="50%"
+              />
+            </div>
+          </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </section>
 
     <!-- Carousel -->
 
-      <section class="phone">
-        <div class="container">
+    <section class="phone">
+      <div class="container"></div>
+    </section>
 
-        </div>
-      </section>
-
-      <section class="laptop">
-        <div class="container">
-          
-        </div>
-      </section>
+    <section class="laptop">
+      <div class="container"></div>
+    </section>
 
     <footer></footer>
   </body>
+  <script src="https://kit.fontawesome.com/698713e0ce.js" crossorigin="anonymous"></script> 
+  <script>
+    feather.replace();
+  </script>
   <script src="static/carousel.js"></script>
 </html>
