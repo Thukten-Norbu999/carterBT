@@ -1,9 +1,8 @@
 
-.container-carousel{
-    
-    background: radial-gradient(circle, #ff7e5f, #feb47b);
-}
 
+
+
+/* --------CAROUSEL-------- */
 
 .carousel {
     position: relative;
@@ -61,4 +60,41 @@
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 
+}
+
+
+
+
+/* --------FOOTER-------- */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #153D76;
+}
+
+.quick-links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.footer ul li{
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer .bottom{
+    grid-column: span 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
