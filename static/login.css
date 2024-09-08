@@ -16,7 +16,7 @@ body {
 }
 .combo{
     width: 428px;
-    background-color: whitesmoke;
+    background-color: transparent;
     color: #F8D99B;
     border: 1px black solid;
     border-radius: 12px;
@@ -42,7 +42,7 @@ body {
     border: 2px solid  rgb(255, 255, 255, .2);
     border-radius: 40px;
     font-size: 16px;
-    color: white;
+    color: grey;
     padding: 20px 45px 20px 20px;
 }
 .input-box input::placeholder{
