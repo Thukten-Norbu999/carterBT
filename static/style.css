@@ -32,8 +32,9 @@ html {
   grid-row: auto;
 }
 
-.row > .col-6 {
-  column-count: 2;
+ .row > .col-6{
+    
+    column-count: 2;
 }
 
 .row > .col-3 {
