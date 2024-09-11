@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root{
+	--primary-color: #153d76;
+	--secondary-color: #F8D99B;
+  --main-font: "Montserrat";
+  --font-size-lg: 24px;
+  --font-size-sm: 12px;
+}
+
+html {
+  font-family: var(--main-font), sans-serif;
+  font-optical-sizing: auto;
+  
+}
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* flex-direction: row;  */
+}
+
+.container.flexend{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.wrapper{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding-top: 5%;
+}
+
+
+.row {
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(12, 1fr );
+  
+}
+
+
+div[class*="col"]{
+  padding: 5px;
+}
+
+.col{
+  grid-column: span 12;
+}
+
+.col-9{
+  grid-column: span 9;
+}
+
+.col-8{
+  grid-column: span 8;
+}
+
+.col-6{
+  grid-column: span 6;
+  
+}
+
+.col-4{
+  grid-column: span 4;
+  
+}
+
+.col-3{
+  grid-column: span 3;
+}
+
+.col-2{
+  grid-column: 2;
+  
+}
+
+
+.dropdown{
+background-color: transparent;
+border: transparent 1px transparent;
+}
+
+.dropdown:focus{
+  background-color: transparent;
+  border: none;
+}
+
+@media screen {
+    
+}
+
+

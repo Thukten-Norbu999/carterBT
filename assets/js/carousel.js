@@ -12,6 +12,8 @@ function changeSlide(direction) {
 }
 
 // Optional: Auto-slide feature
+setTimeout(() => {
+    changeSlide(1);
+}, 1000*60);
 
-changeSlide(1);
 // Change slide every 3 seconds

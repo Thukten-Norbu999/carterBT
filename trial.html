@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navigation Bar</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="static/style.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -21,7 +21,60 @@
         <a href="#">Profile</a>
       </div>
     </nav>
+
+    <div class="product-slider">
+      <div class="slides">
+        <!-- Each product slide -->
+        <div class="slide">
+          <img src="product1.jpg" alt="Product 1">
+          <div class="product-info">
+            <h2>Product 1</h2>
+            <p>$19.99</p>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="product2.jpg" alt="Product 2">
+          <div class="product-info">
+            <h2>Product 2</h2>
+            <p>$29.99</p>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="product3.jpg" alt="Product 3">
+          <div class="product-info">
+            <h2>Product 3</h2>
+            <p>$39.99</p>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation buttons -->
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
   </body>
+  <script>
+    let currentIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
+  currentIndex = (index + totalSlides) % totalSlides; // Ensures looping
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function moveSlide(direction) {
+  showSlide(currentIndex + direction);
+}
+
+// Initialize the slider
+showSlide(currentIndex);
+
+
+  </script>
   <style>
     /* styles.css */
 
@@ -76,6 +129,81 @@
         margin: 5px 0;
       }
     }
+
+    .product-slider {
+      margin: 20%;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.product-info h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.product-info p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.buy-now {
+  background-color: #28a745;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+
   </style>
 
 </html>

@@ -14,11 +14,13 @@ body {
     background-position: center;
 
 }
+/* FORM */
+
 .combo{
     width: 428px;
     background-color: transparent;
     color: #F8D99B;
-    border: 1px black solid;
+    
     border-radius: 12px;
     padding: 30px 40px;
 }
@@ -98,4 +100,11 @@ margin-top: 20px 0 15px;
 }
 .register-link p a:hover{
     text-decoration: underline;
+}
+
+
+/* IMG */
+.login-img{
+    width: 100%;
+    height: 100%;
 }

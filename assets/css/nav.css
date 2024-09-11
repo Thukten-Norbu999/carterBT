@@ -1,6 +1,9 @@
-:root {
-  --primary-color: #153d76;
-  --secondary-color: #F8D99B;; /* Make sure to complete this */
+:root{
+	--primary-color: #153d76;
+	--secondary-color: #F8D99B;
+  --main-font: "Montserrat";
+  --font-size-lg: 24px;
+  --font-size-sm: 12px;
 }
 
 .nav {
@@ -34,6 +37,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.navbar-brand{
+  font-size: var(--font-size-lg);
+}
+
 .nav ul {
   display: flex;
   list-style: none;
@@ -57,6 +64,18 @@
 .nav-link.current{
   text-decoration: underline var(--secondary-color);
 }
+.icon{ 
+  stroke: var(--secondary-color);
+  
+}
+
+/* .nav-item :hover{
+  stroke: white;
+  fill: var(--secondary-color);
+  transform: scale(1.1);
+  transition: .2s ease-in;  
+} */
+
 /* Tablet */
 @media screen {
   
@@ -113,16 +132,6 @@
   }
 }
 
-.icon{ 
-  stroke: var(--secondary-color);
-  
-}
 
-.nav-item :hover{
-  stroke: white;
-  fill: var(--secondary-color);
-  transform: scale(1.1);
-  transition: .2s ease-in;
-}
 
 
