@@ -1,58 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="static/nav.css">
-    <link rel="stylesheet" href="static/form.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/form.css" />
+    <link rel="stylesheet" href="assets/css/product.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+
+
     <title>Home</title>
-</head>
-<body>
-<header>
-    <nav class="nav">
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
         <div class="nav-logo">
-            <img src="assets/bg-logo.png" alt="" width="50" height="50" class="">
-            <a class="navbar-brand" href="#">
-                carter.bt
-            </a>
-            <div class="nav-container">
-                <ul>
-                    <li><a class="nav-item" href="">Home</a></li>
-                    
-                    <li><a class="nav-item" href="trial.html">Products</a></li>
-                    
-                    <li><a class="nav-item" href="">My Chart</a></li>
-                    
-                    <li><a class="nav-item" href=""></a></li>
-                    
-                </ul>
-            </div>
+          <img
+            src="assets/bg-logo.png"
+            alt=""
+            width="50"
+            height="50"
+            class=""
+          />
+          <a class="navbar-brand" href="#"> carter.BT </a>
+        </div>
+        <div class="nav-container hidden">
+          <ul>
+            <li class="nav-item">
+              <!-- <i class="icon" data-feather="home"></i> -->
+              <a class="nav-link current" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <!-- <i class="icon" data-feather="log-in"></i> -->
+              <a href="login.html" class="nav-link">Login</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="trial.html">
+                <!-- <i class="icon" data-feather="phone"></i> -->
+                Products</a
+              >
+            </li>
+            
+
+            <li class="nav-item">
+              <i class="icon" data-feather="shopping-cart"></i>
+              <a class="nav-link" href="">My Chart</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href=""></a>
+            </li>
+
+            <li>
+              <input type="search" name="" id="">
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
           </div>
-    <div class="form-container">
-        <form action="" method="post">
-            <input type="search">
+        </div>
+      </div>
+      <div class="des">
+        <h2>ASUS ROG PC</h2>
+      </div>
+      <div class="des">
+        <h3>NU.156,000</h3>
+      </div>
+      <div id="specsss">
+          <p>ROG Strix SCAR 18 (2024)</p>
+          <p>G834JZR-R6108X</p>
+          <p>NVIDIA® GeForce RTX™ 4080 Laptop GPU</p>
+          <p>Intel® Core™ i9-14900HX Processor</p>
+          <p>18" 2.5K (2560 x 1600, WQXGA) 16:10 240Hz ROG Nebula HDR Display</p>
+          <p>2TB + 2TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage (RAID 0)</p>
+      </div>
+      <br>
+      <div class="rate">
+        <span>----COMMENT----</span>
+        <h1>Client Says</h1>
+      </div>
+      <div class=" rate-container">
 
-        </form>
-    </div>
-    
-</nav>
-</header>
+        <div class="rate-box" >
 
-<main>
-    <article>
-        <section>
-            <div class="container ">
-                <h1>Page1</h1>
+          <div class="rate-box-top">
+
+            <div class="rate-profile">
+
+              <div class="rate-review">
+
+              </div>
+
+
             </div>
-            <div class="container">
-                <h1>Page2</h1>
-            </div>
-        </section>
-    </article>
-</main>
 
-    
 
-</body>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+<script>
+    feather.replace();
+  </script>
 </html>

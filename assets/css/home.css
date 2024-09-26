@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+	--primary-color: #153d76;
+	--secondary-color: #F8D99B;
+    --main-font: "Roboto Mono", monospace;
+  --font-size-lg: 24px;
+  --font-size-sm: 12px;
+}
+
+.banner {
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/34b5bf180145769.6505ae7623131.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.shop-now-btn {
+    background-color: primary;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.shop-now-btn:hover {
+    background-color: #005f5f;
+}
+
+/* --------PRODUCTS-------- */
+
+
+.featured-products {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    max-height: 200px;
+    align-items: center;
+}
+
+.card-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+}
+
+.product {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.product p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.buy-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Promo Section */
+.promo {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+
+.promo h2,
+.promo-timer{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.promo p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.promo .shop-now-btn {
+    background-color: #003366;
+}
+
+
+/* ------- SLIDER PRODUCTS ------- */
+
+.dis-products{
+    display: grid;
+}
+
+.slider-products{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior:  smooth;
+}
+
+.slider-products::-webkit-scrollbar{
+    display: none;
+}
+
+/* ------END------ */
+
+/* ------FEEDBACK------ */
+.feedback{
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+
+
+.star:hover{
+    fill: black;
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .promo h2 {
+        font-size: 1.8rem;
+    }
+}

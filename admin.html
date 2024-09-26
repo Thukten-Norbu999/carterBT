@@ -1,45 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/admin.css">
-    <link rel="stylesheet" href="static/style.css">
-    <title>Parent with Indented Child</title>
-    
-</head>
-<body>
-    <section id="menu">
-        <div class="logo">
-            <img src="assets/bg-logo.png" alt="">
-            <h2>carterBT</h2>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
 
-        <div class="items">
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">UI</a></li>
-            <li><a href="">A</a></li>
-            <li><a href="">C</a></li>
-            <li><a href="">D</a></li>
-        </div>
-    </section>
+    <link rel="stylesheet" href="assets/css/admin.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <section id="interface">
-        <div class="navigation">
-            <div class="n1">
-                <div class="search">
-                    <i class="far search"></i>
-                    <input type="search" name="" id="" placeholder="Search">
-                </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <title>Admin</title>
+  </head>
+  <body>
+    <div class="wrapper-admin">
+      <aside class="admin-sidebar" id="sidebar">
+        <div class="admin-side-logo">
+          <img src="assets/bg-logo.png" width="50px" height="50px" alt="logo" />
+          <a href="" class="side-title">carterBT</a>
+        </div>
+        <div class="admin-side">
+          <ul>
+            
+              <div class="container-side current">
+                <li class="side-item">
+                  <a href="" class="side-link">Dashboard</a>
+                </li>
+              </div>
+              
+              <div class="container-side">
+                <li class="side-item">
+                  <a href="" class="side-link">Orders</a>
+                </li>
+              </div>
+            
+              <div class="container-side">
+                <li class="side-item">
+                  <a href="" class="side-link">Stats</a>
+                </li>
+              </div>
+            
+              <div class="container-side">
+                <li class="side-item">
+                  <a href="" class="side-link">Settings</a>
+                </li>
+              </div>
+              <div class="container-side">
+                <li class="side-item">
+                  <a href="" class="side-link">Logout</a>
+                </li>
+              </div>
+          </ul>
+        </div>
+      </aside>
+
+      <header class="header">
+        <h1>Dashboard</h1>
+        <div class="user-profile">
+          <span>Admin</span>
+          <img src="https://via.placeholder.com/40" alt="Profile Picture" />
+        </div>
+        <button class="toggle-btn" id="toggleSidebar">☰</button>
+      </header>
+
+      <main class="main-content" id="main-content">
+        <div class="dash-overview row">
+          <div class="col-3 four">
+            <div class="container four">
+              <div class="card-row title">
+                <h3>Order<i data-feather="shopping-bag"></i></h3>
+              </div>
+              <div class="card-row content">
+                <h5>160</h5>
+              </div>
             </div>
-
-            <div class="profile">
-                <i class="fa fa-bell"></i>
-                <img src="assets/logo.png" alt="">
+          </div>
+          <div class="col-3 four">
+            <div class="container four">
+              <div class="card-row title">
+                <h3>Shipped<i data-feather="truck"></i></h3>
+              </div>
+              <div class="card-row content">
+                <h5>93</h5>
+              </div>
             </div>
+          </div>
+          <div class="col-3 four">
+            <div class="container four">
+              <div class="card-row title">
+                <h3>Delivered<i data-feather="check-square"></i></h3>
+              </div>
+              <div class="card-row content">
+                <h5>59</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 four">
+            <div class="container four">
+              <div class="card-row title">
+                <h3>Order<i data-feather="shopping-bag"></i></h3>
+              </div>
+              <div class="card-row content">
+                <h5>160</h5>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </section>
-</body>
+        <div class="row">
+          
+          <div class="col">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>head1</th>
+                  <th>head1</th>
+                  <th>head1</th>
+                  <th>head1</th>
+                  <th>head1</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
 
+                <tr>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                </tr>
 
+                <tr>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                </tr>
+
+                <tr>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                </tr>
+
+                <tr>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                </tr>
+
+                <tr>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                </tr>
+
+                <tr>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                </tr>
+
+                <tr>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                </tr>
+
+                <tr>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                </tr>
+
+                <tr>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                </tr>
+
+                <tr>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                  <td>thauketadsjdskfjkd</td>
+                </tr>
+              </tbody>
+              <tfoot></tfoot>
+            </table>
+          </div>
+
+          <div class="col-4">
+            <div class="container productPie">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+              doloribus omnis sed quasi quis? Asperiores ipsa quas odio, impedit
+              nisi consequatur cumque minus, non ducimus, quae ullam nihil eum
+              quia!
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="container">
+              <canvas class="canvas" id="canvas"> </canvas>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="assets/js/func.js"></script>
+  <script src="assets/js/chart.js"></script>
+  <script>
+    feather.replace();
+  </script>
 </html>

@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navigation Bar</title>
-    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
       <img src="assets/bg-logo.png" alt="" width="50" height="50" class="" />
       <a class="navbar-brand" href="#"> carter.bt </a>
       <div class="navbar-section nav-links">
@@ -20,60 +22,186 @@
         <a href="#">Login</a>
         <a href="#">Profile</a>
       </div>
-    </nav>
+    </nav> -->
 
-    <div class="product-slider">
-      <div class="slides">
-        <!-- Each product slide -->
-        <div class="slide">
-          <img src="product1.jpg" alt="Product 1">
+    <section class="product">
+      <h2 class="product-category">best selling</h2>
+      <button class="pre-btn"><i date-frame="arrow-left"></i></button>
+      <button class="nxt-btn"><img src="images/arrow.png" alt="" /></button>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="https://m.media-amazon.com/images/I/81GrCeuCzxL._AC_UY218_.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
           <div class="product-info">
-            <h2>Product 1</h2>
-            <p>$19.99</p>
-            <button class="buy-now">Buy Now</button>
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
           </div>
         </div>
-        <div class="slide">
-          <img src="product2.jpg" alt="Product 2">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="https://m.media-amazon.com/images/I/81GrCeuCzxL._AC_UY218_.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
           <div class="product-info">
-            <h2>Product 2</h2>
-            <p>$29.99</p>
-            <button class="buy-now">Buy Now</button>
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
           </div>
         </div>
-        <div class="slide">
-          <img src="product3.jpg" alt="Product 3">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="https://m.media-amazon.com/images/I/81GrCeuCzxL._AC_UY218_.jpg"
+              class="product-thumb"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <button class="card-btn">add to wishlist</button>
+          </div>
           <div class="product-info">
-            <h2>Product 3</h2>
-            <p>$39.99</p>
-            <button class="buy-now">Buy Now</button>
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/card4.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/card5.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/card6.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/card7.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/card8.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/card9.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/card10.jpg" class="product-thumb" alt="" />
+            <button class="card-btn">add to wishlist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-description">
+              a short line about the cloth..
+            </p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
           </div>
         </div>
       </div>
-      <!-- Navigation buttons -->
-      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-      <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-    
+    </section>
   </body>
   <script>
     let currentIndex = 0;
 
-function showSlide(index) {
-  const slides = document.querySelector('.slides');
-  const totalSlides = document.querySelectorAll('.slide').length;
-  currentIndex = (index + totalSlides) % totalSlides; // Ensures looping
-  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+    function showSlide(index) {
+      const slides = document.querySelector(".slides");
+      const totalSlides = document.querySelectorAll(".slide").length;
+      currentIndex = (index + totalSlides) % totalSlides; // Ensures looping
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
 
-function moveSlide(direction) {
-  showSlide(currentIndex + direction);
-}
+    function moveSlide(direction) {
+      showSlide(currentIndex + direction);
+    }
 
-// Initialize the slider
-showSlide(currentIndex);
-
-
+    // Initialize the slider
+    showSlide(currentIndex);
   </script>
   <style>
     /* styles.css */
@@ -83,7 +211,7 @@ showSlide(currentIndex);
       font-family: Arial, sans-serif;
     }
 
-    .navbar {
+    /* .navbar {
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -110,7 +238,7 @@ showSlide(currentIndex);
       border-radius: 4px;
     }
 
-    /* Adjustments for responsiveness */
+  
     @media (max-width: 768px) {
       .navbar {
         flex-direction: column;
@@ -128,82 +256,83 @@ showSlide(currentIndex);
       .navbar-section a {
         margin: 5px 0;
       }
-    }
+    } */
 
     .product-slider {
       margin: 20%;
-  position: relative;
-  width: 80%;
-  max-width: 800px;
-  margin: auto;
-  overflow: hidden;
-}
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      margin: auto;
+      overflow: hidden;
+    }
 
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
 
-.slide {
-  min-width: 100%;
-  position: relative;
-  box-sizing: border-box;
-}
+    .slide {
+      min-width: 100%;
+      position: relative;
+      box-sizing: border-box;
+    }
 
-.slide img {
-  width: 100%;
-  display: block;
-}
+    .slide img {
+      width: 100%;
+      display: block;
+    }
 
-.product-info {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 10px;
-  text-align: left;
-}
+    .product-info {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      text-align: left;
+    }
 
-.product-info h2 {
-  margin: 0;
-  font-size: 24px;
-}
+    .product-info h2 {
+      margin: 0;
+      font-size: 24px;
+    }
 
-.product-info p {
-  font-size: 18px;
-  margin: 5px 0;
-}
+    .product-info p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
 
-.buy-now {
-  background-color: #28a745;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-}
+    .buy-now {
+      background-color: #28a745;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-button.prev, button.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
+    button.prev,
+    button.next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: black;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
 
-button.prev {
-  left: 10px;
-}
+    button.prev {
+      left: 10px;
+    }
 
-button.next {
-  right: 10px;
-}
-
-
+    button.next {
+      right: 10px;
+    }
   </style>
-
+  <script>
+    feather.replace();
+  </script>
 </html>

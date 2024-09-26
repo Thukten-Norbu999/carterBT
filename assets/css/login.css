@@ -14,97 +14,110 @@ body {
     background-position: center;
 
 }
-/* FORM */
 
-.combo{
-    width: 428px;
-    background-color: transparent;
-    color: #F8D99B;
-    
-    border-radius: 12px;
-    padding: 30px 40px;
+.container{
+    flex-wrap: wrap;
+    color: black;
+    width: 90%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
 }
-.combo h1{
-    font-size: 36px;
+
+label{
+    color: black;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    width: inherit;
+    border: .5px solid rgb(180, 179, 179);
+    border-radius: .9rem;
+    box-shadow: 1px 1px 4px rgb(173, 173, 173);
+}
+
+.form{
+    flex: 55%;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.icon-btn{
+    padding:10px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.signin form{
+    flex-direction: column;
+    place-items: center;
+}
+
+.brand-design{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    color: whitesmoke;
+    flex: 45%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+
     text-align: center;
 }
-.combo .input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    /* background: yellow; */
-    margin: 30px 0;
-}
-.input-box input{
-    width: 100%;
-    height: 100%;
-    
-    border: none;
-    outline: none;
-    border: 2px solid  rgb(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: grey;
-    padding: 20px 45px 20px 20px;
-}
-.input-box input::placeholder{
-    color: grey;
-}
-.input-box i{
-    position: absolute;
-    right: 20px;
-    top: 30%;
-    transform: translate(-50%);
-    font-size: 20px;
-}
-.combo .remember-forget{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-    
-}
-.remember-forget label input{
-    accent-color: white;
-    margin-right: 3px;
-}
-.remember-forget a{
-    color: white;
-    text-decoration: none;
-}
-.remember-forget a:hover{
-    text-decoration: underline;
-}
-.combo .btn{
- width: 100%;
- height: 40px;
- background: white;
- border: none;
- outline: none;
- border-radius: 40px;
- box-shadow: 0 0 10px rgba(0, 0, 0, .1);
- cursor: pointer;
- font-size: 16px;
- color: #333;
-font-weight: 600;
-}
-.combo .register-link{
-font-size: 14.5px;
-text-align: center;
-margin-top: 20px 0 15px;
-}
-.register-link p a{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-.register-link p a:hover{
-    text-decoration: underline;
+
+.brand-design.signin{
+
+    border-radius: 0.9rem 0 0 .9rem ;
 }
 
 
-/* IMG */
-.login-img{
-    width: 100%;
-    height: 100%;
+.brand-design.signup{
+    border-radius: 0.9rem 0 0 .9rem ;
+    transform: translateX();
+}
+.brand-design.signin.hidden{
+    transform: translateX(50%);
+    transition: transform .3s fade;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.brand-design.signup{
+    flex: 40%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0 0.9rem 0.9rem 0 ;
+}
+
+.brand-design.signin.hidden,
+.brand-design.signup.hidden,
+.form.signup.hidden,
+.form.signin.hidden{
+    display: none;
+    
+}
+
+
+
+@media (max-width:480px) {
+    .form-container{
+        height: max-content;
+    }
+    .brand-design{
+        display: none;
+    }
 }
