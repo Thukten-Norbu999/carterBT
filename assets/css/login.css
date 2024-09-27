@@ -103,6 +103,11 @@ label{
     border-radius: 0 0.9rem 0.9rem 0 ;
 }
 
+.brand-span,
+.brand-title{
+    margin: 1rem;
+}
+
 .brand-design.signin.hidden,
 .brand-design.signup.hidden,
 .form.signup.hidden,
