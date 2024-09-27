@@ -3,6 +3,7 @@
 :root{
 	--primary-color: #153d76;
 	--secondary-color: #F8D99B;
+  --tertiary-color:#E67351;
   --main-font: "Roboto Mono", monospace;
   --font-size-lg: 24px;
   --font-size-sm: 12px;
@@ -150,6 +151,7 @@ top: 0;
 
 .card:hover{
   transform: scale(1.05);
+  z-index: -100;
 }
 
 .card.row{
