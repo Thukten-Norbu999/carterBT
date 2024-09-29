@@ -3,7 +3,7 @@
 :root{
 	--primary-color: #153d76;
 	--secondary-color: #F8D99B;
-    --tertiary-color: #082957;
+    
     --main-font: "Montserrat";
     --font-size-lg: 24px;
     --font-size-sm: 12px;
@@ -88,7 +88,7 @@
 
 .header {
     grid-area: header;
-    background-color: var(--tertiary-color);
+    background-color: #082957;
     color: white;
     padding: 0 20px;
     display: flex;

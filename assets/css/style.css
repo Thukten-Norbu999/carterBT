@@ -21,6 +21,10 @@ body {
   background-color: #f2f2f2;
 }
 
+.section-title{
+  font-size: 2rem;
+}
+
 nav,
 footer {
   width: 100%;
@@ -37,16 +41,12 @@ footer {
   grid-template-columns: 1fr auto 1fr;
   padding: 0.8rem;
   overflow-x: hidden;
+  z-index: 100;
 }
 
-/* .nav {
-  background-color: var(--primary-color);
+#toggleSidebar {
   color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-} */
+}
 
 .logo {
   font-size: 1.5rem;
@@ -63,6 +63,7 @@ footer {
   justify-content: flex-end;
   place-items: center;
 }
+
 .nav-links {
   display: flex;
   flex-direction: row;
@@ -80,19 +81,25 @@ footer {
   padding: 0.5rem 1rem;
 }
 
-.nav-item li a:hover {
-  background-color: #008080;
-  border-radius: 4px;
-}
 
 .toggle.hidden {
   display: none;
 }
 /* --------END NAV-------- */
 
+.current{
+  background-color: var(--tertiary-color);
+}
+
 /* --------SIDEBAR-------- */
 .sidebar {
   display: none;
+  
+}
+
+.logo-s {
+  display: flex;
+  flex-direction: row;
 }
 
 .sidebar.active {
@@ -104,27 +111,77 @@ footer {
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
-  z-index: 10;
+  z-index: 200;
   padding: 0.5rem;
   transition: all, 0.3s, ease-in;
+}
+
+.brand {
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: whitesmoke;
+}
+.sidebar-menu ul li {
+  list-style-type: none;
+}
+.side-item{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.side-links{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
 }
 
 /* --------FOOTER-------- */
 
 .footer {
-  background-color: #153d76;
+  background-color: var(--primary-color);
   text-overflow: ellipsis;
   color: var(--secondary-color);
   background-color: var(--primary-color);
-  align-items: center;
+  
 }
 
 .footer-content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 
   justify-content: space-evenly;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials,
+.quick-links,
+.newsletter {
+  flex-wrap: wrap;
+}
+.footer-links {
+  display: flex;
+  color: white;
+  align-items: center;
+  margin: 0.4rem;
 }
 
 /* ------ CARD ------ */
@@ -132,22 +189,43 @@ footer {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  min-width: min-content;
+  
   box-shadow: 1px 1px 5px rgb(227, 227, 227);
   border-radius: 6px;
   padding: 1rem;
-  margin: 5%;
+  margin: 1rem;
 }
 
-.card:hover {
+.card.hover:hover {
+  z-index: -10;
   transform: scale(1.05);
+}
+
+.card-anchor{
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
+}
+
+.card-anchor:hover{
+  color: var(--tertiary-color);
 }
 
 .card.row {
   display: flex;
 }
 
+.card-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 /* ------ END CARD ------ */
 
 /* ------ BUTTON ------ */
@@ -155,14 +233,25 @@ footer {
 .btn {
   background-color: transparent;
   border: none;
-  color: whitesmoke;
+  color: black;
   padding: 10px;
   border-radius: 35px;
   margin: 1rem;
 }
 
+
+.btn.hidden {
+  display: none;
+}
+
 .btn.primary {
   background-color: var(--primary-color);
+  color: whitesmoke;
+}
+
+.btn.primary.outline {
+  border: 1px var(--primary-color) solid;
+  background-color: transparent;
 }
 
 .btn.secondary.outline {
@@ -175,7 +264,33 @@ footer {
   color: white;
 }
 
-/* ------ END CARD ------ */
+.btn.tertiary {
+  background-color: var(--tertiary-color);
+}
+.btn.tertiary.outline {
+  background-color: var(--tertiary-color);
+  color: white;
+}
+
+.cart-btn{
+  padding: 1rem;
+  border: none;
+  border-radius: none;
+  font-size: 2rem;
+  stroke-width: 1;
+  background-color: transparent;
+}
+
+.cart-btn .bi.bi-cart:hover{
+  fill: var(--tertiary-color);
+}
+
+.bi.bi-cart:hover{
+  fill: var(--tertiary-color);
+  transform: scale(1.05);
+}
+
+/* ------ END BUTTON ------ */
 
 /* ------ LAYOUT ------*/
 
@@ -248,6 +363,12 @@ div[class*="col"] {
   transition: border-color 0.3s ease;
 }
 
+.form-group input {
+  max-width: 100%;
+  width: 80%;
+  min-width: 50%;
+}
+
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
@@ -279,5 +400,9 @@ div[class*="col"] {
 
   .toggle.hidden {
     display: block;
+  }
+
+  .footer-content {
+    flex-direction: column;
   }
 }

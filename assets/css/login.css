@@ -56,6 +56,16 @@ label{
     align-items: center;
 }
 
+/* .icon-btn:hover{
+    background-color: var(--tertiary-color);
+    
+}
+
+i{
+    fill: var(--tertiary-color);
+    stroke: whitesmoke;
+} */
+
 .signin form{
     flex-direction: column;
     place-items: center;
@@ -108,21 +118,31 @@ label{
     margin: 1rem;
 }
 
-.brand-design.signin.hidden,
-.brand-design.signup.hidden,
-.form.signup.hidden,
-.form.signin.hidden{
-    display: none;
-    
+.hidden{
+    display: none; 
 }
 
 
 
-@media (max-width:480px) {
+
+
+@media (max-width:768px) {
     .form-container{
         height: max-content;
     }
     .brand-design{
         display: none;
+    }
+
+    .col-6{
+        grid-column: span 12;
+    }
+
+    .col-4{
+        grid-column: span 6;
+    }
+
+    .anchor-on.hidden{
+        display: block;
     }
 }
